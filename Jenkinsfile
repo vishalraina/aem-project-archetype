@@ -7,6 +7,6 @@ node {
     }
    
    stage ('Maven build'){
-      sh '${mvnHome}/bin/mvn clean install'
+      sh "${mvnHome}/bin/mvn clean install"
    }
 }
