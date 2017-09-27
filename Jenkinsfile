@@ -5,4 +5,8 @@ node {
     stage('Clone sources') {
         git branch: 'master',url: 'https://github.com/vishalraina/aem-project-archetype.git'
     }
+   
+   stage ('Maven build'){
+      sh '${mvnHome}/bin/mvn clean install'
+   }
 }
